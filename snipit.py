@@ -51,7 +51,7 @@ def render():
     if args.background_color != None:
         body_style = 'background-color: #' + args.background_color + ''
     elif args.background_image:
-        body_style = 'background-image: url(\'/getImagePath/' + args.background_image + '\'); height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover;'
+        body_style = 'background-image: url(\'/getImagePath/' + args.background_image + '\'); height: 100%; background-position: center; background-repeat: no-repeat;'
     else:
         body_style = ""
     if args.syntax_style:
@@ -126,6 +126,7 @@ def gen():
 def send_style(name):
     return send_file('./styles/' + name)
 
+print("Starting Generation...")
 webbrowser.open_new_tab('http://localhost:5000/generate')
     
 app.run("0.0.0.0")
