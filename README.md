@@ -61,5 +61,6 @@ python snipit.py [-h] [-i INPUT] [-o OUTPUT] [-l LANGUAGE] [-wh WINDOW_HEIGHT]
   ## Credits:
   
   [highlight.js](https://highlightjs.org) - Syntax highlighting and CSS
+  
   [bulma.io](https://bulma.io) - CSS Components
   
