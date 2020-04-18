@@ -27,6 +27,25 @@ python snipit.py [-h] [-i INPUT] [-o OUTPUT] [-l LANGUAGE] [-wh WINDOW_HEIGHT]
                  [-sc STYLE_CONFIG] [-z ZOOM]
 ```
 
+To input a file use:
+
+```
+python snipit.py -i /path/to/file -l language
+```
+
+To input from clipboard use:
+
+```
+python snipit.py -cb -l language
+```
+
+To pull from a config use:
+```
+python snipit.py -sc config.json -cb -l python
+```
+
+**Syntax Styles == Highlight.JS CSS Colors. You can find a list of them here: https://github.com/highlightjs/highlight.js/tree/master/src/styles**
+
 ### Style Configs:
 
 You can use a JSON file to share style configs for others or to use for yourself to keep track of easy configurations. Any values in these configs will override values you pass as an argument!
