@@ -1,0 +1,3 @@
+selenium==3.141.0
+Flask==1.1.1
+clipboard==0.0.4

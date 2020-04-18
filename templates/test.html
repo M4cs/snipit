@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html style="overflow: hidden">
+
+<head>
+    <link rel="stylesheet" href="styles/{{style}}.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<style>
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.monaco-font {
+    font-family: monaco,Consolas,Lucida Console,monospace; 
+}
+
+.hack-font {
+    font-family: Hack, monospace;
+}
+
+
+</style>
+<body style="{{body_style}};">
+    <div class="center-screen" style="padding: 20px;">
+        <div class="box" style="{{box_color}}; padding: 20px;">
+            <article class="media">
+                <pre style="{{box_color}}; padding: 0px;"><code class="{{language}} hack-font" style="{{box_color}}; padding: 0px;">{{code_here}}</code></pre>
+            </article>
+        </div>
+    </div>
+</body>
+</html>
