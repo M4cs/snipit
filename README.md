@@ -2,6 +2,10 @@
 Generate code snippets from files and clipboard.
 *This is still in very early development and simply in an Alpha stage.*
 
+<p align="center">
+  <a align="center"><img src="https://mbcdn.sfo2.cdn.digitaloceanspaces.com/Snippet_6124.png"></a>
+</p>
+
 ### Requirements:
 
 - Python 3.6
