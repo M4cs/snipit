@@ -1,7 +1,6 @@
 # snipit
 Generate code snippets from files and clipboard.
-
-This is still in very early development and simply an Alpha stage.
+*This is still in very early development and simply in an Alpha stage.*
 
 ### Requirements:
 
@@ -17,6 +16,7 @@ Grab dependencies:
 pip install -r requirements.txt
 ```
 
+Make sure you have Geckodriver installed and available in your path! If you installed the Firefox browser you should be all set.
 
 ### Usage:
 
@@ -25,6 +25,20 @@ python snipit.py [-h] [-i INPUT] [-o OUTPUT] [-l LANGUAGE] [-wh WINDOW_HEIGHT]
                  [-ww WINDOW_WIDTH] [-cb] [-bc BACKGROUND_COLOR]
                  [-bi BACKGROUND_IMAGE] [-cc CODEBOX_COLOR] [-ss SYNTAX_STYLE]
                  [-sc STYLE_CONFIG] [-z ZOOM]
+```
+
+### Style Configs:
+
+You can use a JSON file to share style configs for others or to use for yourself to keep track of easy configurations. Any values in these configs will override values you pass as an argument!
+
+Example Style:
+```json
+{
+    "background-color": "292929",
+    "codebox-color": "707070",
+    "zoom": 1.5,
+    "syntax-style": "a11y-light"
+}
 ```
 
 ### Options as of now:
